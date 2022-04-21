@@ -1,0 +1,22 @@
+[
+	{
+		"name": "skyux.8194596ceb166e0ccf29.chunk.js",
+		"fallback": "SKY_PAGES_READY_SKYUX_8194596CEB166E0CCF29_CHUNK"
+	},
+	{
+		"name": "polyfills.95f1be2cd5cc35fc911f.js",
+		"fallback": "SKY_PAGES_READY_POLYFILLS_95F1BE2CD5CC35FC911F"
+	},
+	{
+		"name": "pollyfill.4a9ad95d9e7887d412ff.chunk.js",
+		"fallback": "SKY_PAGES_READY_POLLYFILL_4A9AD95D9E7887D412FF_CHUNK"
+	},
+	{
+		"name": "app.f3654327dc31f86a7104.js",
+		"fallback": "SKY_PAGES_READY_APP_F3654327DC31F86A7104"
+	},
+	{
+		"name": "vendor.111f5d07f508224b928f.chunk.js",
+		"fallback": "SKY_PAGES_READY_VENDOR_111F5D07F508224B928F_CHUNK"
+	}
+]

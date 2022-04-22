@@ -2,21 +2,20 @@
 <html lang="en">
 
 <head>
+    <script>
     // BBSkyAddinClient is global here.
-    var client = new BBSkyAddinClient.AddinClient({
-    callbacks: {
-    init: (args) => {
+var client = new BBSkyAddinClient.AddinClient({
+  callbacks: {
+    init: function(args) {
 
-    // the context values are provided as part of the args object
-    context = args.context;
+      // perform any initialization work here...
 
-    // most extension points provide the current record ID
-    currentRecordId = context.recordId;
-
-    ...
+      // inform the host page that the add-in is ready to be shown
+      args.ready({ showUI: true, title: 'My Custom Tile' });
     }
-    }
-    });
+  }
+});
+    </script>
     <base href="/demo/">
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">

@@ -2,20 +2,7 @@
 <html lang="en">
 
 <head>
-    <script>
-    // BBSkyAddinClient is global here.
-var client = new BBSkyAddinClient.AddinClient({
-  callbacks: {
-    init: function(args) {
-
-      // perform any initialization work here...
-
-      // inform the host page that the add-in is ready to be shown
-      args.ready({ showUI: true, title: 'My Custom Tile' });
-    }
-  }
-});
-    </script>
+    
     <base href="/demo/">
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
@@ -31,6 +18,26 @@ var client = new BBSkyAddinClient.AddinClient({
     <script src="polyfills.95f1be2cd5cc35fc911f.js"></script>
     <script src="skyux.8194596ceb166e0ccf29.chunk.js"></script>
     <script src="app.f3654327dc31f86a7104.js"></script>
+    <script>
+    (function () {
+
+  // Add-in code goes here
+
+  // BBSkyAddinClient is global here.
+  var client = new BBSkyAddinClient.AddinClient({
+    callbacks: {
+      init: function(args) {
+
+        // perform any initialization needed for the add-in
+
+        // when the tile is ready to be shown, inform the host page
+        args.ready({ showUI: true, title: 'My Custom Tile' });
+      }
+    }
+  });
+
+}());
+    </script>
 </body>
 
 </html>

@@ -2,25 +2,16 @@
   <meta charset="utf-8">
   <title>SpaTest</title>
   <script>
-    (function () {
-
-// Add-in code goes here
-
-// BBSkyAddinClient is global here.
-var client = new BBSkyAddinClient.AddinClient({
+    var client = new AddinClient({
   callbacks: {
-    init: function(args) {
-
-      // perform any initialization needed for the add-in
-
-      // when the tile is ready to be shown, inform the host page
-      args.ready({ showUI: true, title: 'My Custom Tile' });
+    init: (args) => {
+      args.ready({
+        showUI: true,
+        title: 'My Custom Tile Title'
+      });
     }
   }
 });
-
-}());
-
   </script>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,6 +20,7 @@ var client = new BBSkyAddinClient.AddinClient({
 <body>
   <app-root></app-root>
   <h1>Hello World!</h1>
+
 <script src="runtime.37118f9e30af825f914d.js" defer></script><script src="polyfills.e2a4b22d20aab5e854ba.js" defer></script><script src="main.343da8fefd50fa3e67a8.js" defer></script>
 
 </body></html>

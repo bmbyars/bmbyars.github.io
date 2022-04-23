@@ -1,18 +1,8 @@
 <!DOCTYPE html><html lang="en"><head>
   <meta charset="utf-8">
   <title>SpaTest</title>
-  <script>
-    var client = new AddinClient({
-  callbacks: {
-    init: (args) => {
-      args.ready({
-        showUI: true,
-        title: 'My Custom Tile Title'
-      });
-    }
-  }
-});
-  </script>
+  <script src="https://sky.blackbaudcdn.net/static/sky-addin-client/1/sky-addin-client.umd.min.js"></script>
+  <script src="HelloWorld.js"></script>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
